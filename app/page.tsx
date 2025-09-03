@@ -6,6 +6,10 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const workProjects = [
   {
+    name: "Dusty Psalms",
+    description: "It's time to dust off our Psalms and dedicate a few minutes a day to prayer. After going through all the currently available Psalm apps on the App Store nothing was a simple straight forward Psalm app with all the features I wanted. Focus on 1 Psalms a day. Ability to easily save and share passages. Multi Language Support. Track your trends and build healthy habits. That's why I built Dusty Psalms. Hope you enjoy!"
+  },
+  {
     name: "MeetLink",
     description: "MeetLink is an online meeting link generator tool that helps simplify meeting schedules using personalized URL (Landing Page) to track all your meetings and appointments. It provides you a customizable landing page to share when meeting online for all your calendar meetings with personal info, time, scheduling, and links. This leads to one-of-a-kind branding experience. Bid farewell to link chaos, save time, and make a lasting impact with your personal meeting oasis."
   },
@@ -158,6 +162,11 @@ export default function Home() {
                           <>
                             <a href="https://www.youtube.com/watch?v=9oQqiWw2esg" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">The Kosher App</a>
                             {project.description.substring(14)}
+                          </>
+                        ) : project.name === "Dusty Psalms" ? (
+                          <>
+                            <a href="/dusty-psalms-privacy" className="text-[#E79600] hover:underline transition-colors duration-200">Dusty Psalms</a>
+                            {project.description.substring(13)}
                           </>
                         ) : (
                           project.description
