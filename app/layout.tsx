@@ -10,6 +10,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Chaim Gross - Portfolio',
   description: 'Portfolio website for Chaim Gross',
+  icons: {
+    icon: '/CG_image.PNG',
+    shortcut: '/CG_image.PNG',
+    apple: '/CG_image.PNG',
+  },
 }
 
 export default function RootLayout({

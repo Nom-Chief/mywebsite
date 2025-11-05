@@ -165,7 +165,7 @@ export default function Home() {
                           </>
                         ) : project.name === "Dusty Psalms" ? (
                           <>
-                            <a href="/dusty-psalms-privacy" className="text-[#E79600] hover:underline transition-colors duration-200">Dusty Psalms</a>
+                            <a href="/dusty-psalms-privacy" className="text-[#E79600] hover:underline transition-colors duration-200">Dusty Psalms</a>{" "}
                             {project.description.substring(13)}
                           </>
                         ) : (
