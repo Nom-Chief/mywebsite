@@ -8,6 +8,10 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const workProjects = [
   {
+    name: "Clean Your Room",
+    description: "Clean Your Room is an AI-powered iOS app that gives you a personalized, step-by-step plan to tackle the overwhelming task of cleaning your room. Instead of staring at the mess not knowing where to start, the app uses AI to break it down into simple, manageable steps based on what you're actually dealing with. Set customizable goals, work through them one task at a time, and make real progress without the paralysis."
+  },
+  {
     name: "Dusty Psalms",
     description: "It's time to dust off our Psalms and dedicate a few minutes a day to prayer. After going through all the currently available Psalm apps on the App Store nothing was a simple straight forward Psalm app with all the features I wanted. Focus on 1 Psalms a day. Ability to easily save and share passages. Multi Language Support. Track your trends and build healthy habits. That's why I built Dusty Psalms. Hope you enjoy!"
   },
@@ -48,6 +52,11 @@ const socialLinks = [
 // ─── Gen Z content ────────────────────────────────────────────────────────────
 
 const genZWorkProjects = [
+  {
+    name: "Clean Your Room 🧹✨🛏️",
+    url: "https://apps.apple.com/us/app/clean-your-room-step-by-step/id6756962683",
+    description: "okay so 😭 we have ALL been there — staring at the MESS not knowing where to even START 💀🫠 this app is AI-powered 🤖✨ and gives u a PERSONALIZED step by step cleaning plan based on YOUR specific disaster zone 🏠💥 set customizable goals 🎯✨, knock them out one by one 📋💪, and actually make progress without the paralysis 🧠🔥 no more doom scrolling instead of cleaning bestie 📱➡️🧹 we're SO back fr fr 👑💫"
+  },
   {
     name: "Dusty Psalms 🙏✨🕯️",
     url: "/dusty-psalms-privacy",
@@ -161,6 +170,18 @@ function RobotsView() {
         {'    '}<Cm c="<!-- ═══ PROJECTS ════════════════════════════════════════════════ -->" />{'\n'}
         {'    '}<T c="<section" /> <A c="id" />=<V c={'"projects"'} /><T c=">" />{'\n'}
         {'      '}<T c="<h2" /><T c=">" />Projects<T c="</h2>" />{'\n'}
+        {'\n'}
+        {'      '}<T c="<article" /> <A c="id" />=<V c={'"clean-your-room"'} /><T c=">" />{'\n'}
+        {'        '}<T c="<h3" /><T c=">" />Clean Your Room<T c="</h3>" />{'\n'}
+        {'        '}<T c="<p" /> <A c="data-category" />=<V c={'"productivity"'} /> <A c="data-platform" />=<V c={'"ios"'} /> <A c="data-ai" />=<V c={'"true"'} /> <A c="data-url" />=<V c={'"https://apps.apple.com/us/app/clean-your-room-step-by-step/id6756962683"'} /><T c=">" />{'\n'}
+        {'          Clean Your Room is an AI-powered iOS app that gives you a personalized,'}{'\n'}
+        {'          step-by-step plan to tackle the overwhelming task of cleaning your room.'}{'\n'}
+        {'          Instead of staring at the mess not knowing where to start, the app uses'}{'\n'}
+        {'          AI to break it down into simple, manageable steps based on what you\'re'}{'\n'}
+        {'          actually dealing with. Set customizable goals, work through them one task'}{'\n'}
+        {'          at a time, and make real progress without the paralysis.'}{'\n'}
+        {'        '}<T c="</p>" />{'\n'}
+        {'      '}<T c="</article>" />{'\n'}
         {'\n'}
         {'      '}<T c="<article" /> <A c="id" />=<V c={'"dusty-psalms"'} /><T c=">" />{'\n'}
         {'        '}<T c="<h3" /><T c=">" />Dusty Psalms<T c="</h3>" />{'\n'}
@@ -535,6 +556,11 @@ export default function Home() {
                             <>
                               <a href="/dusty-psalms-privacy" className="text-[#E79600] hover:underline transition-colors duration-200">Dusty Psalms</a>{" "}
                               {project.description.substring(13)}
+                            </>
+                          ) : project.name === "Clean Your Room" ? (
+                            <>
+                              <a href="https://apps.apple.com/us/app/clean-your-room-step-by-step/id6756962683" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">Clean Your Room</a>
+                              {project.description.substring(15)}
                             </>
                           ) : (
                             project.description
