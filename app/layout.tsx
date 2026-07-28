@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import '../styles/globals.css'
 
 const inter = Inter({ 
@@ -24,7 +25,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        {children}
+        <Script
+          id="vtag-ai-js"
+          src="https://r2.leadsy.ai/tag.js"
+          strategy="afterInteractive"
+          data-pid="1zdHlLBvTIGFT5noO"
+          data-version="062024"
+        />
+      </body>
     </html>
   )
 } 
