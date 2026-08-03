@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/tkc/Privacy"
+  to = "/tkc/Privacy.pdf"
+  status = 200
+
+[[redirects]]
+  from = "/tkc/Terms"
+  to = "/tkc/Terms.pdf"
+  status = 200
