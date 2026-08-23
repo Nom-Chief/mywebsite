@@ -31,22 +31,24 @@ export default function CleanYourRoomPrivacy() {
             <h3 className="text-xl font-semibold text-foreground mb-3">Room Photos and AI Analysis</h3>
             <p className="text-foreground leading-relaxed mb-4">
               When you choose to scan a room, the app prepares a reduced-size copy of the photo and
-              sends it, together with your selected scan options, to our analysis service. The service
-              forwards the request to the Google Gemini API, which analyzes the image and returns a
-              cleaning task list.
+              sends it, together with your selected scan options, to the Google Gemini API, which
+              analyzes the image and returns a cleaning task list. Depending on the app version and
+              service configuration, the request may first pass through our analysis relay, which
+              forwards it to Gemini.
             </p>
             <ul className={listClass}>
               <li>You decide which photo to capture or select and when to submit it.</li>
               <li>A photo is transmitted only when you start a scan.</li>
               <li>We do not use room photos for advertising or sell them.</li>
               <li>
-                Our analysis service processes the photo to relay the request and does not
-                intentionally save the photo, prompt, or Gemini response to a database or object store.
+                When the analysis relay is used, it processes the photo to forward the request and does
+                not intentionally save the photo, prompt, or Gemini response to a database or object store.
               </li>
               <li>
-                The service uses a random, pseudonymous per-install identifier to authenticate
-                requests. Its operational logs may contain that identifier, the AI model used,
-                request size, response status, and processing time, but not the photo itself.
+                App versions that use the relay create a random, pseudonymous per-install identifier
+                to authenticate requests. The relay&apos;s operational logs may contain that identifier,
+                the AI model used, request size, response status, and processing time, but not the
+                photo itself.
               </li>
               <li>
                 Google processes the submitted photo, prompt, and generated response under the Gemini
@@ -70,7 +72,10 @@ export default function CleanYourRoomPrivacy() {
               <li>App settings and preferences</li>
               <li>Cleaning tasks, completed sessions, progress, streaks, and statistics</li>
               <li>Before/after photos, only if you enable the option to save them</li>
-              <li>A random per-install identifier and authentication token used to access the analysis service</li>
+              <li>
+                For app versions that use our analysis relay, a random per-install identifier and
+                authentication token used to access it
+              </li>
             </ul>
             <p className="text-foreground leading-relaxed mb-6">
               Android cloud backup and device-transfer extraction are disabled for the app&apos;s local
@@ -178,9 +183,10 @@ export default function CleanYourRoomPrivacy() {
 
             <h3 className="text-xl font-semibold text-foreground mb-3">Cloudflare</h3>
             <p className="text-foreground leading-relaxed mb-6">
-              Our analysis relay is hosted using Cloudflare Workers. Cloudflare processes network
-              requests and related technical data, such as IP address and request metadata, to transmit
-              and secure the service. See{" "}
+              App versions configured to use our analysis relay connect to a service hosted using
+              Cloudflare Workers. For those requests, Cloudflare processes network requests and related
+              technical data, such as IP address and request metadata, to transmit and secure the
+              service. See{" "}
               <a href="https://www.cloudflare.com/privacypolicy/" className={linkClass} target="_blank" rel="noopener noreferrer">
                 Cloudflare&apos;s Privacy Policy
               </a>
@@ -208,8 +214,8 @@ export default function CleanYourRoomPrivacy() {
               <li>App data is kept in platform-provided app storage on iOS and Android.</li>
               <li>Analysis and purchase-service traffic is transmitted over encrypted HTTPS connections.</li>
               <li>
-                The iOS analysis identifier and token are stored in the Keychain; Android stores them
-                in the app&apos;s private storage and disables app-data backup.
+                When the analysis relay is used, iOS stores its analysis identifier and token in the
+                Keychain; Android stores them in the app&apos;s private storage and disables app-data backup.
               </li>
               <li>No method of electronic transmission or storage is completely secure, so we cannot guarantee absolute security.</li>
             </ul>
@@ -223,9 +229,9 @@ export default function CleanYourRoomPrivacy() {
                 clear them in the app or delete the app, subject to any device backups described above.
               </li>
               <li>
-                Our analysis relay does not intentionally retain room photos, prompts, or Gemini
-                responses after completing the request. Operational logs may be retained according to
-                our hosting configuration and Cloudflare&apos;s policies.
+                When used, our analysis relay does not intentionally retain room photos, prompts, or
+                Gemini responses after completing the request. Operational logs may be retained
+                according to our hosting configuration and Cloudflare&apos;s policies.
               </li>
               <li>Google retains Gemini API data according to the applicable service tier, account settings, and Google&apos;s policies.</li>
               <li>
