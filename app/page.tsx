@@ -176,18 +176,16 @@ function RobotsView() {
         {'        '}A few projects I have tackled are:{'\n'}
         {'      '}<T c="</p>" />{'\n'}
         {'      '}<T c="<ul>" />{'\n'}
-        {'        '}<T c="<li>" />Building and implementing custom task management software{'\n'}
-        {'          '}for a property management company{'\n'}
-        {'          '}with over 2,000 properties under management and more than 50 employees.{'\n'}
+        {'        '}<T c="<li>" />Implemented and rolled out task management software for a{'\n'}
+        {'          '}property management company — 2,000+ properties and 50+ employees.{'\n'}
         {'        '}<T c="</li>" />{'\n'}
-        {'        '}<T c="<li>" />Strategized, consulted and built project management software{'\n'}
-        {'          '}for a construction company covering{'\n'}
-        {'          '}the full job lifecycle — from client enquiry and subcontractor quoting{'\n'}
-        {'          '}through building management and post-build problems and complaints.{'\n'}
+        {'        '}<T c="<li>" />Strategized and built project management software for a{'\n'}
+        {'          '}construction company — covering the full job lifecycle from{'\n'}
+        {'          '}enquiry and quoting through to post-build issues.{'\n'}
         {'        '}<T c="</li>" />{'\n'}
-        {'        '}<T c="<li>" />Built and trained a team of mechanics on a custom billing solution{'\n'}
-        {'          '}for work on the road,{'\n'}
-        {'          '}automating a three-person back office down to one part-time person.{'\n'}
+        {'        '}<T c="<li>" />Built a custom billing system for a mobile mechanics team{'\n'}
+        {'          '}and trained them on it —{'\n'}
+        {'          '}reducing a three-person back office to one part-time person.{'\n'}
         {'        '}<T c="</li>" />{'\n'}
         {'      '}<T c="</ul>" />{'\n'}
         {'    '}<T c="</section>" />{'\n'}
@@ -373,9 +371,9 @@ function GenZView({ expandedProject, toggleProject }: { expandedProject: string 
                 past 2 years 🗓️✨ i&apos;ve been helping companies BIG and small 🏢🤝 create efficiencies 📈🔥 through custom software AND AI 🤖💻 a few projects i have tackled:
               </p>
               <ul className="mt-4 list-disc space-y-3 pl-6 text-foreground leading-relaxed text-lg">
-                <li>building and implementing custom task management 🏠📋 for a property management company with 2,000+ properties 😮 and 50+ employees 👥✨</li>
-                <li>strategized, consulted and built project management 🏗️🔨 for a construction company covering the WHOLE job lifecycle 🔁 — client enquiry 📩, subcontractor quoting 💰, building management 🧱, post-build problems and complaints 😤✅</li>
-                <li>built and trained a team of mechanics 🚗🔧 on a custom billing solution that automated a 3 person back office down to ONE part-time person 🤯👑</li>
+                <li>implemented and rolled out task management 🏠📋 for a property management company — 2,000+ properties 😮 and 50+ employees 👥✨</li>
+                <li>strategized and built project management 🏗️🔨 for a construction company — full job lifecycle 🔁 from enquiry 📩 and quoting 💰 through to post-build issues 😤✅</li>
+                <li>built a custom billing system 🚗🔧 for a mobile mechanics team and trained them on it — reducing a 3 person back office to ONE part-time person 🤯👑</li>
               </ul>
             </div>
           </div>
@@ -560,9 +558,9 @@ export default function Home() {
                   Over the past two years I have been helping companies big and small create operational efficiencies through custom software and AI. A few projects I have tackled are:
                 </p>
                 <ul className="mt-4 list-disc space-y-3 pl-6 text-foreground leading-relaxed text-lg">
-                  <li>Building and implementing custom task management software for a property management company with over 2,000 properties under management and more than 50 employees</li>
-                  <li>Strategized, consulted and built project management software for a construction company covering the full job lifecycle — from client enquiry and subcontractor quoting through building management and post-build problems and complaints</li>
-                  <li>Built and trained a team of mechanics on a custom billing solution for work on the road, automating a three-person back office down to one part-time person</li>
+                  <li>Implemented and rolled out task management software for a property management company — 2,000+ properties and 50+ employees</li>
+                  <li>Strategized and built project management software for a construction company — covering the full job lifecycle from enquiry and quoting through to post-build issues</li>
+                  <li>Built a custom billing system for a mobile mechanics team and trained them on it — reducing a three-person back office to one part-time person</li>
                 </ul>
               </div>
             </div>
