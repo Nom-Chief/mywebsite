@@ -12,8 +12,8 @@ const workProjects = [
     description: "Clean Your Room is an AI-powered iOS app that gives you a personalized, step-by-step plan to tackle the overwhelming task of cleaning your room. Instead of staring at the mess not knowing where to start, the app uses AI to break it down into simple, manageable steps based on what you're actually dealing with. Set customizable goals, work through them one task at a time, and make real progress without the paralysis."
   },
   {
-    name: "Dusty Psalms",
-    description: "It's time to dust off our Psalms and dedicate a few minutes a day to prayer. After going through all the currently available Psalm apps on the App Store nothing was a simple straight forward Psalm app with all the features I wanted. Focus on 1 Psalms a day. Ability to easily save and share passages. Multi Language Support. Track your trends and build healthy habits. That's why I built Dusty Psalms. Hope you enjoy!"
+    name: "Kid Court",
+    description: "Kid Court is an AI-powered iOS app that turns everyday sibling arguments into a fair hearing. When two kids cannot agree, Judge Hoot gives each child a turn to speak, considers the parenting approach the family chose, and delivers a calm ruling with practical next steps — share, repair, compromise, or move on. Kids pick animal characters instead of names. No accounts, no ads, private by design."
   },
   {
     name: "MeetLink",
@@ -58,9 +58,9 @@ const genZWorkProjects = [
     description: "okay so 😭 we have ALL been there — staring at the MESS not knowing where to even START 💀🫠 this app is AI-powered 🤖✨ and gives u a PERSONALIZED step by step cleaning plan based on YOUR specific disaster zone 🏠💥 set customizable goals 🎯✨, knock them out one by one 📋💪, and actually make progress without the paralysis 🧠🔥 no more doom scrolling instead of cleaning bestie 📱➡️🧹 we're SO back fr fr 👑💫"
   },
   {
-    name: "Dusty Psalms 🙏✨🕯️",
-    url: "/dusty-psalms-privacy",
-    description: "okay so 😭 i literally could not find a psalm app that wasn't mid 💀 so i just built one myself no cap 🤌✨ one psalm a day 📖🌟, super easy saving and sharing 🔗💫, multi language support 🌍🌎🌏, and habit tracking 📈🔥 bc we're out here growing fr fr 🙏💪✨ hope u enjoy bestie 💕"
+    name: "Kid Court 🦉⚖️✨",
+    url: "https://apps.apple.com/au/app/kid-court-end-sibling-rivalry/id6797079284",
+    description: "okay so 😭 sibling fights are EXHAUSTING 💀🫠 Judge Hoot 🦉 hears BOTH sides 🎤✨ each kid gets up to 45 seconds ⏱️ then boom a calm ruling with actual next steps 📋💪 share, repair, compromise, or MOVE ON 🫡 no names just animal characters 🦊🐰 no accounts no ads 🔒✨ parenting style is customizable in settings 👨‍👩‍👧🔥 we're ending the rivalry era fr fr 👑💫"
   },
   {
     name: "MeetLink 🔗💅✨",
@@ -153,7 +153,7 @@ function RobotsView() {
         {'      '}<T c="<p>" />{'\n'}
         {'        '}Currently leading multiple product initiatives at Zeno Media,{'\n'}
         {'        '}with a focus on{'\n'}
-        {'        '}<T c="<a" /> <A c="href" />=<V c={'"https://zenoplus.co"'} /> <A c="target" />=<V c={'"_blank"'} /><T c=">" />Zeno Plus<T c="</a>" />,{'\n'}
+        {'        '}<T c="<a" /> <A c="href" />=<V c={'"https://podcastbot.ai"'} /> <A c="target" />=<V c={'"_blank"'} /><T c=">" />podcastbot.ai<T c="</a>" />,{'\n'}
         {'        '}a suite of smart tools designed to help broadcasters produce,{'\n'}
         {'        '}edit, distribute, and monetize their radio stations with ease.{'\n'}
         {'        '}Being hired as employee number 5 I have led product and growth{'\n'}
@@ -165,6 +165,31 @@ function RobotsView() {
         {'        '}<T c="<a" /> <A c="href" />=<V c={'"https://audioclips.ai"'} /> <A c="target" />=<V c={'"_blank"'} /><T c=">" />Audioclips.ai<T c="</a>" />{'\n'}
         {'        '}our AI audio generation tool for broadcasters and podcasters.{'\n'}
         {'      '}<T c="</p>" />{'\n'}
+        {'    '}<T c="</section>" />{'\n'}
+        {'\n'}
+        {'    '}<Cm c="<!-- ═══ CONSULTING ══════════════════════════════════════════════ -->" />{'\n'}
+        {'    '}<T c="<section" /> <A c="id" />=<V c={'"consulting"'} /><T c=">" />{'\n'}
+        {'      '}<T c="<h2" /><T c=">" />Consulting<T c="</h2>" />{'\n'}
+        {'      '}<T c="<p>" />{'\n'}
+        {'        '}Over the past two years I have been helping companies big and small{'\n'}
+        {'        '}create operational efficiencies through custom software and AI.{'\n'}
+        {'        '}A few projects I have tackled are:{'\n'}
+        {'      '}<T c="</p>" />{'\n'}
+        {'      '}<T c="<ul>" />{'\n'}
+        {'        '}<T c="<li>" />Building and implementing custom task management software{'\n'}
+        {'          '}for a property management company{'\n'}
+        {'          '}with over 2,000 properties under management and more than 50 employees.{'\n'}
+        {'        '}<T c="</li>" />{'\n'}
+        {'        '}<T c="<li>" />Strategized, consulted and built project management software{'\n'}
+        {'          '}for a construction company covering{'\n'}
+        {'          '}the full job lifecycle — from client enquiry and subcontractor quoting{'\n'}
+        {'          '}through building management and post-build problems and complaints.{'\n'}
+        {'        '}<T c="</li>" />{'\n'}
+        {'        '}<T c="<li>" />Built and trained a team of mechanics on a custom billing solution{'\n'}
+        {'          '}for work on the road,{'\n'}
+        {'          '}automating a three-person back office down to one part-time person.{'\n'}
+        {'        '}<T c="</li>" />{'\n'}
+        {'      '}<T c="</ul>" />{'\n'}
         {'    '}<T c="</section>" />{'\n'}
         {'\n'}
         {'    '}<Cm c="<!-- ═══ PROJECTS ════════════════════════════════════════════════ -->" />{'\n'}
@@ -183,15 +208,15 @@ function RobotsView() {
         {'        '}<T c="</p>" />{'\n'}
         {'      '}<T c="</article>" />{'\n'}
         {'\n'}
-        {'      '}<T c="<article" /> <A c="id" />=<V c={'"dusty-psalms"'} /><T c=">" />{'\n'}
-        {'        '}<T c="<h3" /><T c=">" />Dusty Psalms<T c="</h3>" />{'\n'}
-        {'        '}<T c="<p" /> <A c="data-category" />=<V c={'"prayer-app"'} /> <A c="data-platform" />=<V c={'"ios"'} /><T c=">" />{'\n'}
-        {"          It's time to dust off our Psalms and dedicate a few minutes a day to prayer."}{'\n'}
-        {'          After going through all the currently available Psalm apps on the App Store'}{'\n'}
-        {'          nothing was a simple straight forward Psalm app with all the features I wanted.'}{'\n'}
-        {'          Focus on 1 Psalm a day. Ability to easily save and share passages.'}{'\n'}
-        {'          Multi Language Support. Track your trends and build healthy habits.'}{'\n'}
-        {"          That's why I built Dusty Psalms. Hope you enjoy!"}{'\n'}
+        {'      '}<T c="<article" /> <A c="id" />=<V c={'"kid-court"'} /><T c=">" />{'\n'}
+        {'        '}<T c="<h3" /><T c=">" />Kid Court<T c="</h3>" />{'\n'}
+        {'        '}<T c="<p" /> <A c="data-category" />=<V c={'"education"'} /> <A c="data-platform" />=<V c={'"ios"'} /> <A c="data-ai" />=<V c={'"true"'} /> <A c="data-url" />=<V c={'"https://apps.apple.com/au/app/kid-court-end-sibling-rivalry/id6797079284"'} /><T c=">" />{'\n'}
+        {'          Kid Court is an AI-powered iOS app that turns everyday sibling arguments'}{'\n'}
+        {'          into a fair hearing. When two kids cannot agree, Judge Hoot gives each child'}{'\n'}
+        {'          a turn to speak, considers the parenting approach the family chose, and'}{'\n'}
+        {'          delivers a calm ruling with practical next steps — share, repair,'}{'\n'}
+        {'          compromise, or move on. Kids pick animal characters instead of names.'}{'\n'}
+        {'          No accounts, no ads, private by design.'}{'\n'}
         {'        '}<T c="</p>" />{'\n'}
         {'      '}<T c="</article>" />{'\n'}
         {'\n'}
@@ -326,13 +351,32 @@ function GenZView({ expandedProject, toggleProject }: { expandedProject: string 
             <div className="flex-1">
               <p className="text-foreground leading-relaxed text-lg">
                 currently leading multiple product initiatives 🚀💼 at Zeno Media with a focus on{' '}
-                <a href="https://zenoplus.co" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">Zeno Plus</a>{' '}
+                <a href="https://podcastbot.ai" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">podcastbot.ai</a>{' '}
                 ✨🎙️ — a suite of SMART tools 🧠🛠️ designed to help broadcasters produce 🎬, edit ✂️, distribute 🌍, and monetize 💰 their radio stations with ease 😌✨ i was employee NUMBER FIVE 🖐️😭 and led product and growth from 10,000 listeners 😮 to NOW 40 MILLION MAU 🤯🤯🔥 43,000 radio stations 📻🌎 top 10 streaming company WORLDWIDE 🏆👑 i&apos;ve led{' '}
                 <a href="https://zeno.fm" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">Zeno.FM</a>{' '}
                 🎙️, Podcast by Phone 📞✨, and{' '}
                 <a href="https://audioclips.ai" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">Audioclips.ai</a>{' '}
                 🤖🎵 our AI audio generation tool fr 🔥
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Consulting */}
+        <section className="mb-20">
+          <div className="flex gap-16 items-start">
+            <div className="flex-shrink-0 w-20">
+              <h2 className="text-base font-semibold text-gray-500 uppercase tracking-wider">consulting 🧠💼</h2>
+            </div>
+            <div className="flex-1">
+              <p className="text-foreground leading-relaxed text-lg">
+                past 2 years 🗓️✨ i&apos;ve been helping companies BIG and small 🏢🤝 create efficiencies 📈🔥 through custom software AND AI 🤖💻 a few projects i have tackled:
+              </p>
+              <ul className="mt-4 list-disc space-y-3 pl-6 text-foreground leading-relaxed text-lg">
+                <li>building and implementing custom task management 🏠📋 for a property management company with 2,000+ properties 😮 and 50+ employees 👥✨</li>
+                <li>strategized, consulted and built project management 🏗️🔨 for a construction company covering the WHOLE job lifecycle 🔁 — client enquiry 📩, subcontractor quoting 💰, building management 🧱, post-build problems and complaints 😤✅</li>
+                <li>built and trained a team of mechanics 🚗🔧 on a custom billing solution that automated a 3 person back office down to ONE part-time person 🤯👑</li>
+              </ul>
             </div>
           </div>
         </section>
@@ -499,8 +543,27 @@ export default function Home() {
               </div>
               <div className="flex-1">
                 <p className="text-foreground leading-relaxed text-lg">
-                  Currently leading multiple product initiatives at Zeno Media, with a focus on <a href="https://zenoplus.co" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">Zeno Plus</a>, a suite of smart tools designed to help broadcasters produce, edit, distribute, and monetize their radio stations with ease. Being hired as employee number 5 I have led product and growth taking us from 10,000 listeners to now 40 million MAU listeners, 43,000 radio stations and a top 10 streaming company worldwide. I have lead initiatives including <a href="https://zeno.fm" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">Zeno.FM</a>, Podcast by Phone, and <a href="https://audioclips.ai" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">Audioclips.ai</a> our AI audio generation tool for broadcasters and podcasters.
+                  Currently leading multiple product initiatives at Zeno Media, with a focus on <a href="https://podcastbot.ai" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">podcastbot.ai</a>, a suite of smart tools designed to help broadcasters produce, edit, distribute, and monetize their radio stations with ease. Being hired as employee number 5 I have led product and growth taking us from 10,000 listeners to now 40 million MAU listeners, 43,000 radio stations and a top 10 streaming company worldwide. I have lead initiatives including <a href="https://zeno.fm" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">Zeno.FM</a>, Podcast by Phone, and <a href="https://audioclips.ai" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">Audioclips.ai</a> our AI audio generation tool for broadcasters and podcasters.
                 </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Consulting Section */}
+          <section className="mb-20">
+            <div className="flex gap-16 items-start">
+              <div className="flex-shrink-0 w-20">
+                <h2 className="text-base font-semibold text-gray-500 uppercase tracking-wider">Consulting</h2>
+              </div>
+              <div className="flex-1">
+                <p className="text-foreground leading-relaxed text-lg">
+                  Over the past two years I have been helping companies big and small create operational efficiencies through custom software and AI. A few projects I have tackled are:
+                </p>
+                <ul className="mt-4 list-disc space-y-3 pl-6 text-foreground leading-relaxed text-lg">
+                  <li>Building and implementing custom task management software for a property management company with over 2,000 properties under management and more than 50 employees</li>
+                  <li>Strategized, consulted and built project management software for a construction company covering the full job lifecycle — from client enquiry and subcontractor quoting through building management and post-build problems and complaints</li>
+                  <li>Built and trained a team of mechanics on a custom billing solution for work on the road, automating a three-person back office down to one part-time person</li>
+                </ul>
               </div>
             </div>
           </section>
@@ -552,10 +615,10 @@ export default function Home() {
                               <a href="https://www.youtube.com/watch?v=9oQqiWw2esg" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">The Kosher App</a>
                               {project.description.substring(14)}
                             </>
-                          ) : project.name === "Dusty Psalms" ? (
+                          ) : project.name === "Kid Court" ? (
                             <>
-                              <a href="/dusty-psalms-privacy" className="text-[#E79600] hover:underline transition-colors duration-200">Dusty Psalms</a>{" "}
-                              {project.description.substring(13)}
+                              <a href="https://apps.apple.com/au/app/kid-court-end-sibling-rivalry/id6797079284" target="_blank" rel="noopener noreferrer" className="text-[#E79600] hover:underline transition-colors duration-200">Kid Court</a>
+                              {project.description.substring(9)}
                             </>
                           ) : project.name === "Clean Your Room" ? (
                             <>
